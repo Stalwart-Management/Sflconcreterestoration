@@ -45,7 +45,7 @@ export default async function handler(req, res) {
       to: LEAD_TO_EMAIL.split(',').map((s) => s.trim()),
       reply_to: lead.email,
       subject: `New estimate request: ${lead.service || 'General'} (${lead.location || 'N/A'})`,
-      html: `<h2>New lead from sflconcreterestoration.com</h2><table>${rows}</table>`,
+      html: `<h2>New lead from South Florida Concrete Restoration website</h2><table>${rows}</table>`,
     }),
   });
 
